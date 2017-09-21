@@ -7,8 +7,8 @@ if (Gem.win_platform?)
   end
 end
 
-require "./test.rb"
-require "./result_printer.rb"
+require_relative "test.rb"
+require_relative "result_printer.rb"
 
 social_test = Test.new
 result_printer = ResultPrinter.new
