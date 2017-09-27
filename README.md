@@ -1,13 +1,17 @@
-# sociability_test
+### Тест "Уровень общительности"
 
-Description:
+Программа реализует тест на уровень общительности
 
-The test will help determine your level of communication.
-The program asks you questions and scores points according to the answers
-Then the program assesses your sociability in accordance with the points scored
+[Ссылка на тест](http://syntone.ru/psytesty/vash-uroven-obshhitelnosti/).
 
-How to use:
+Программа написана на Ruby, версия 2.4.2
+Для запуска необходимо скачать [дистрибутив Ruby](https://www.ruby-lang.org/ru/downloads/).
 
-Run sociability_test.rb
-Follow the instructions
+Открыть программу можно в консоли, перейдя в папку с программой и написав:
 
+` ruby sociability_test.rb `
+
+Далее следуйте инструкциям в самой программе.
+
+
+Автор: Кирилл Носенко при поддержке [goodprogrammer.ru](http://goodprogrammer.ru/)
