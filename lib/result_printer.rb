@@ -1,8 +1,9 @@
 class ResultPrinter
-  def initialize
-    @answers_array = []
-    current_path = File.dirname(__FILE__)
-    file_name = current_path + "/data/answers.txt"
+  def initialize(file_name)
+    @answers_array = read_from_file(file_name)
+  end
+
+  def read_from_file(file_name)
     if File.exist?(file_name)
       f = File.new(file_name, "r:UTF-8")
       @answers_array = f.readlines
@@ -10,6 +11,7 @@ class ResultPrinter
     else
       abort "Файл #{file_name} не найден"
     end
+    @answers_array
   end
 
   def result(social_test)

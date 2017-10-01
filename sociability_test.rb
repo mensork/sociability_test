@@ -6,12 +6,16 @@ if (Gem.win_platform?)
     io.set_encoding(Encoding.default_external, Encoding.default_internal)
   end
 end
+current_path = File.dirname(__FILE__)
+questions_path = current_path + "/data/questions.txt"
+answers_path = current_path + "/data/answers.txt"
 
-require_relative "test.rb"
-require_relative "result_printer.rb"
+require_relative current_path + "/lib/test.rb"
+require_relative current_path + "/lib/result_printer.rb"
 
-social_test = Test.new
-result_printer = ResultPrinter.new
+social_test = Test.new(questions_path)
+result_printer = ResultPrinter.new(answers_path)
+
 
 puts
 puts "Добрый день! Ответьте на вопросы, используя цифры."
