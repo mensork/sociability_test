@@ -1,8 +1,6 @@
 ### Тест "Уровень общительности"
 
-Программа реализует тест на уровень общительности
-
-[Ссылка на тест](http://syntone.ru/psytesty/vash-uroven-obshhitelnosti/).
+Программа реализует [тест на уровень общительности](http://syntone.ru/psytesty/vash-uroven-obshhitelnosti/).
 
 Программа написана на Ruby, версия 2.4.2
 Для запуска необходимо скачать [дистрибутив Ruby](https://www.ruby-lang.org/ru/downloads/).
