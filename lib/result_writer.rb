@@ -1,4 +1,4 @@
-class ResultPrinter
+class ResultWriter
   def initialize(file_name)
     @answers_array = read_from_file(file_name)
   end

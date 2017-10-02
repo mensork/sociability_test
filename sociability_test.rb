@@ -11,10 +11,10 @@ questions_path = current_path + "/data/questions.txt"
 answers_path = current_path + "/data/answers.txt"
 
 require_relative current_path + "/lib/test.rb"
-require_relative current_path + "/lib/result_printer.rb"
+require_relative current_path + "/lib/result_writer.rb"
 
 social_test = Test.new(questions_path)
-result_printer = ResultPrinter.new(answers_path)
+result_printer = ResultWriter.new(answers_path)
 
 
 puts
